@@ -6,7 +6,7 @@ use bevy_egui::{egui, EguiContexts, EguiPlugin};
 use bevy_pancam::PanCam;
 use bevy_pancam::PanCamPlugin;
 
-fn main() {
+pub fn main() {
     App::new()
         .add_plugins((DefaultPlugins, PanCamPlugin, EguiPlugin))
         .init_resource::<InputString>()
